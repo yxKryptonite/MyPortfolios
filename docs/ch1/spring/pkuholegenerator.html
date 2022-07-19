@@ -283,6 +283,78 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="pku-hole-generator">PKU Hole Generator</h1>
+<p><img src="https://s1.328888.xyz/2022/07/19/l1i5j.png" alt=""></p>
+<p><img src="https://s1.328888.xyz/2022/07/19/l1ArX.png" alt=""></p>
+<ul>
+<li><a href="https://github.com/HirojiFukuyama/pkuhole" target="_blank">GitHub</a></li>
+<li><a href="https://kryptonite.work/pkuhole" target="_blank">Project Webpage</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>This is a course project for the NLP class of <strong><em>Introduction to AI</em></strong> in PKU.</p>
+<p>This project aims to simulate the <a href="https://pkuhelper.pku.edu.cn/hole/" target="_blank">hole (&#x6811;&#x6D1E;)</a> in PKU. Based on the user&apos;s input, the AI models will generate replies that are similar to the real hole replies.</p>
+<h2 id="environment">Environment</h2>
+<ul>
+<li><code>python==3.9.6</code></li>
+<li><code>torch==1.11.0</code></li>
+<li><code>gensim==4.1.2</code></li>
+<li><code>numpy==1.21.5</code></li>
+<li><code>tensorboard==2.7.0</code></li>
+<li><code>streamlit==1.5.0</code></li>
+</ul>
+<!-- ## File Structure
+- Scripts
+  - `dataload.py`: data loading and preprocessing
+  - `lgg_models.py`: definition of the models
+  - `utils.py`: utility functions
+  - `main.py`: training on [Boya platform](https://boya.ai.pku.edu.cn/openai/#/index)
+  - `train.ipynb`: training locally or on Google Colab
+  - `generate.ipynb`: testing generation
+  - `testui.py`: testing UI
+  - `app.py`: main script for visualization
+- Directories 
+  - `datasets`: raw txt data
+  - `docs`: web material
+  - `graph`: pipeline graph
+  - `hole`: tensorboard training logs
+  - `lgg_model_paths`: saved language models
+  - `word_model_paths`: saved word embeddings
+  - `checkpoints`: nothing, just ignore it
+  - `__pycache__`: system files, just ignore it
+- Others
+  - `requirements.txt`: required packages for ```app.py```
+  - `presentation.pdf`: presentation for the course report
+  - `LICENSE`: open source license
+  - `readme.md`: this file -->
+<h2 id="how-to-use">How to use</h2>
+<ul>
+<li>Approach 1: visit <a href="https://share.streamlit.io/hirojifukuyama/pkuhole/app.py" target="_blank">this page</a>.</li>
+<li>Approach 2: download zip and run <code>streamlit run app.py</code>.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<pre><code>&#x1F605;
+
+[Alice] &#x8868;&#x767D;
+
+[Bob] Bob
+
+[Bob] &#x6765;&#x4E86;&#xFF01;
+
+[Carol] &#x6478;&#x6478;&#xFF0C;&#x56E0;&#x4E3A;&#x8981;&#x7559;&#x5230;&#x4E00;&#x4E2A;&#x8BA4;&#x771F;&#x7684;&#x65E5;&#x5B50;&#xFF01;
+
+[Bob] &#x8C22;&#x8C22;A &#x7231;&#x4F60;&#x1F618;
+</code></pre><pre><code>popi
+
+[Alice] &#x8EAB;&#x9AD8;&#x4F53;&#x91CD;&#x989C;&#x503C;
+
+[&#x6D1E;&#x4E3B;] 170&#xFF0C;&#x4FDD;&#x5BC6;&#xFF0C;&#x81EA;&#x6211;&#x611F;&#x89C9;&#x4E2D;&#x4E0A;&#xFF08;&#x4F1A;&#x88AB;&#x4EBA;&#x5076;&#x5C14;&#x79F0;&#x8D5E;&#x7684;&#x7A0B;&#x5EA6;&#xFF01;&#xFF09;
+
+[Bob] Re &#x6D1E;&#x4E3B;: dz&#x662F;&#x5609;&#x5FC3;&#x7CD6;&#x5417;
+
+[&#x6D1E;&#x4E3B;] Re Bob: &#x786E;&#x5B9E;
+
+[Alice] Re &#x6D1E;&#x4E3B;: &#x6216;&#x8005;&#x60F3;&#x804A;&#x804A;&#x4E5F;&#x884C;&#xFF0C;&#x6211;&#x8FD8;&#x633A;&#x4F1A;&#x804A;&#x5929;&#x7684;
+</code></pre><hr>
+<p><strong>For more details, check out <a href="https://kryptonite.work/pkuhole" target="_blank">our website</a>.</strong></p>
 
                                 
                                 </section>
@@ -326,7 +398,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PKU Hole Generator","level":"1.2.2.1","depth":3,"next":{"title":"QT PC2DM","level":"1.2.2.2","depth":3,"path":"ch1/spring/qtpc2dm.md","ref":"ch1/spring/qtpc2dm.md","articles":[]},"previous":{"title":"Spring","level":"1.2.2","depth":2,"path":"ch1/spring/README.md","ref":"ch1/spring/README.md","articles":[{"title":"PKU Hole Generator","level":"1.2.2.1","depth":3,"path":"ch1/spring/pkuholegenerator.md","ref":"ch1/spring/pkuholegenerator.md","articles":[]},{"title":"QT PC2DM","level":"1.2.2.2","depth":3,"path":"ch1/spring/qtpc2dm.md","ref":"ch1/spring/qtpc2dm.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch1/spring/pkuholegenerator.md","mtime":"2022-07-18T12:09:02.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-18T12:09:59.178Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PKU Hole Generator","level":"1.2.2.1","depth":3,"next":{"title":"QT PC2DM","level":"1.2.2.2","depth":3,"path":"ch1/spring/qtpc2dm.md","ref":"ch1/spring/qtpc2dm.md","articles":[]},"previous":{"title":"Spring","level":"1.2.2","depth":2,"path":"ch1/spring/README.md","ref":"ch1/spring/README.md","articles":[{"title":"PKU Hole Generator","level":"1.2.2.1","depth":3,"path":"ch1/spring/pkuholegenerator.md","ref":"ch1/spring/pkuholegenerator.md","articles":[]},{"title":"QT PC2DM","level":"1.2.2.2","depth":3,"path":"ch1/spring/qtpc2dm.md","ref":"ch1/spring/qtpc2dm.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch1/spring/pkuholegenerator.md","mtime":"2022-07-19T06:25:50.547Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-19T06:35:36.672Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
